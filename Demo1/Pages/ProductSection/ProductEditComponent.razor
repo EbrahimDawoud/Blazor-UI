@@ -1,0 +1,92 @@
+﻿@page "/product/edit/{id:int}"
+<div class="container">
+    <h3>ProductEditComponent</h3>
+    @if (ProdObj != null)
+    {   
+        <EditForm Model="ProdObj" class="form" OnSubmit="Save">
+            <div class="form-control">
+                <label>Product ID </label>
+                <InputNumber @bind-Value="ProdObj.Id"></InputNumber>
+            </div>
+            <div class="form-control">
+                <label>Product Name </label>
+                <InputText  @bind-Value="ProdObj.Name"></InputText>
+            </div>
+            <div class="form-control">
+                <label>Product Price</label>
+                <InputNumber @bind-Value="ProdObj.Price"></InputNumber>
+            </div>
+            <div class="form form-control">
+                <label>Product Category </label>
+                <InputSelect @bind-Value="ProdObj.CatId">
+                    @foreach (var item in CatList)
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }
+                </InputSelect>
+            </div>
+            
+            <div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+
+
+        </EditForm>
+        <div class="card mx-auto" style="width: 40rem;">
+            <div class="card-header">
+                <h4>Product Details</h4>
+            </div>
+            <div class="card-img-top">
+                <img class="card-img-top" src="@ProdObj.ImageUrl" />
+            </div>
+            <div class="card-body">
+                <div class=" form-control">
+                    <label>
+                        Product ID : @ProdObj.Id
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label>
+                        Product Name : @ProdObj.Name
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label>
+                        Product Price : @ProdObj.Price
+                    </label>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="card-header mx-auto">
+            <h1>No Product was found</h1>
+        </div>
+    }
+</div>
+@code {
+    [Parameter]
+    public int id { get; set; }
+    public Product ProdObj { get; set; }
+    [Inject]
+    public IService<Product> ProductService { get; set; }
+    [Inject]
+    public NavigationManager nav { get; set; }
+    public List<Category> CatList { get; set; }
+    [Inject]
+    public IService<Category> CategoryService { get; set; }
+
+    protected override void OnInitialized()
+    {
+        ProdObj = ProductService.GetById(id);
+        CatList = CategoryService.GetAll();
+        base.OnInitialized();
+    }
+    public void Save()
+    {
+        Console.WriteLine("Product Saved");
+        nav.NavigateTo("/products");
+    }
+
+}

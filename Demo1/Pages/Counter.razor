@@ -1,0 +1,23 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<p>Two way binding using bind-value</p>
+<input type="text" @bind-value="Msg"/>
+<p>@Msg</p>
+<hr />
+<p>Two way binding with update</p>
+<input type="text" @bind-value="Msg" @bind-value:event="oninput"/>
+@code {
+    private int currentCount = 0;
+    public string Msg { get; set; } = "Hello World!";
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

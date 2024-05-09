@@ -1,0 +1,6 @@
+D:\ITI\Course33(Blazor)\Day2\Demo2\Demo1\obj\Debug\net8.0\Demo2.csproj.AssemblyReference.cache
+D:\ITI\Course33(Blazor)\Day2\Demo2\Demo1\obj\Debug\net8.0\Demo2.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Course33(Blazor)\Day2\Demo2\Demo1\obj\Debug\net8.0\Demo2.AssemblyInfoInputs.cache
+D:\ITI\Course33(Blazor)\Day2\Demo2\Demo1\obj\Debug\net8.0\Demo2.AssemblyInfo.cs
+D:\ITI\Course33(Blazor)\Day2\Demo2\Demo1\obj\Debug\net8.0\Demo2.csproj.CoreCompileInputs.cache
+D:\ITI\Course33(Blazor)\Day2\Demo2\Demo1\obj\Debug\net8.0\Demo2.MvcApplicationPartsAssemblyInfo.cache

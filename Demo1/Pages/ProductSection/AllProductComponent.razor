@@ -1,0 +1,77 @@
+﻿@page "/allproduct"
+<PageTitle>All Employees</PageTitle>
+<div class="container">
+    <h3>AllEmpComponent</h3>
+    <select class="form-control" @bind="ProdId">
+        @foreach(var emp in EmpList){
+            <option class="form-control" value="@emp.Id">@emp.Name</option>
+        })
+    </select>
+    <div>
+    <input type="button" value="showProductData" @onclick="getProduct" class="mt-4" />
+    <input type="button" value="Show All Products" @onclick="ShowAllProducts" class="mt-4" />
+
+</div>
+@if(showGrid)
+{
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        @foreach(var prod in EmpList)
+        {
+            <div class="card" style="width: 18rem; margin: 20px;">
+                <div class="card-header">
+                    <h4>Product Details</h4>
+                </div>
+                <div class="card-img-top">
+                    <img class="card-img-top" src="@prod.ImageUrl" alt="Product Image" />
+                </div>
+                <div class="card-body">
+                    <div class="form-control">
+                        <label>Product ID : @prod.Id</label>
+                    </div>
+                    <div class="form-control">
+                        <label>Product Name : @prod.Name</label>
+                    </div>
+                    <div class="form-control">
+                        <label>Product Price : @prod.Price</label>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else if(ProdObj != null)
+{
+    <div class="card " style="width: 40rem; margin:20px auto;">
+        <div class="card-header">
+            <h4>Product Details</h4>
+        </div>
+        <div class="card-img-top">
+            <img class="card-img-top" src="https://toriavey.com/images/2011/01/TOA109_18-1.jpeg" />
+        </div>
+        <div class="card-body">
+            <div class="form-control">
+                <label>
+                    Product ID : @ProdObj.Id
+                </label>
+            </div>
+            <div class="form-control">
+                <label>
+                    Product Name : @ProdObj.Name
+                </label>
+            </div>
+            <div class="form-control">
+                <label>
+                    Product Price : @ProdObj.Price
+                </label>
+            </div
+        </div>
+    </div>
+}
+else
+{
+    <p>No Product was found</p>
+}
+</div>
+@code {
+  
+}

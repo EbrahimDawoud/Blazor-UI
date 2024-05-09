@@ -1,0 +1,29 @@
+﻿@page "/products"
+<h3>ProductsW_S_Component</h3>
+<table class="table  table-bordered table-hover table-light">
+    <thead>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Category</td>
+        <td>Action</td>
+    </thead>
+    <tbody>
+        @foreach(var prod in productList){
+        <tr>
+            <td>@prod.Id</td>
+            <td>@prod.Name</td>
+            <td>@prod.Price</td>
+            <td>@categoryList.FirstOrDefault(t => t.Id == prod.CatId).Name</td>
+            <td>
+                <a class="btn btn-secondary" href="/product/@prod.Id">Show Details</a>
+                <a class="btn btn-dark" href="/product/edit/@prod.Id">Edit</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+
+}

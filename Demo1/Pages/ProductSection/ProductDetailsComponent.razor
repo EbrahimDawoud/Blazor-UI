@@ -1,0 +1,52 @@
+﻿@page "/product/{id:int}"
+<div class="container-fluid borderd mt-4 mb-4">
+    <h3>ProductDetailsComponent</h3>
+
+    @* button back to list *@
+    <a href="/products" class="btn btn-primary mb-3">Back to List</a>
+    @if(ProdObj!=null){
+    <div class="card mx-auto" style="width: 40rem;">
+        <div class="card-header">
+            <h4>Product Details</h4>
+        </div>
+        <div class="card-img-top">
+            <img class="card-img-top" src="@ProdObj.ImageUrl" />
+        </div>
+        <div class="card-body">
+            <div class="form-control">
+                <label>
+                    Product ID : @ProdObj.Id
+                </label>
+            </div>
+            <div class="form-control">
+                <label>
+                    Product Name : @ProdObj.Name
+                </label>
+            </div>
+            <div class="form-control">
+                <label>
+                    Product Price : @ProdObj.Price
+                </label>
+            </div>
+        </div>
+    </div>
+    }
+    else
+    {
+        <div class="card-header mx-auto">
+            <h1>No Product was found</h1>
+        </div>
+    }
+</div>
+@code {
+    [Parameter]
+    public int id { get; set; }
+    public Product ProdObj { get; set; }
+    [Inject]
+    public IService<Product> ProductService { get; set; }
+    protected override void OnInitialized()
+    {
+        ProdObj = ProductService.GetById(id);
+        base.OnInitialized();
+    }
+}
