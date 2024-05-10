@@ -3,27 +3,33 @@
     <h3>ProductEditComponent</h3>
     @if (ProdObj != null)
     {   
-        <EditForm Model="ProdObj" class="form" OnSubmit="Save">
+        <EditForm Model="ProdObj"  OnValidSubmit="Save" OnInvalidSubmit="NotSave">
+            @* <ValidationSummary></ValidationSummary> *@
+           <DataAnnotationsValidator />
             <div class="form-control">
                 <label>Product ID </label>
-                <InputNumber @bind-Value="ProdObj.Id"></InputNumber>
+                <InputNumber class="form form-control" @bind-Value="ProdObj.Id"></InputNumber>
+                <ValidationMessage For="()=>ProdObj.Id"></ValidationMessage>
             </div>
-            <div class="form-control">
+            <div class="form form-control">
                 <label>Product Name </label>
-                <InputText  @bind-Value="ProdObj.Name"></InputText>
+                <InputText class="form form-control" @bind-Value="ProdObj.Name"></InputText>
+                <ValidationMessage For="()=>ProdObj.Name"></ValidationMessage>
+
             </div>
             <div class="form-control">
                 <label>Product Price</label>
-                <InputNumber @bind-Value="ProdObj.Price"></InputNumber>
+                <InputNumber class="form form-control" @bind-Value="ProdObj.Price"></InputNumber>
             </div>
             <div class="form form-control">
                 <label>Product Category </label>
-                <InputSelect @bind-Value="ProdObj.CatId">
+                <InputSelect class="form form-control" @bind-Value="ProdObj.CatId">
                     @foreach (var item in CatList)
                     {
                         <option value="@item.Id">@item.Name</option>
                     }
                 </InputSelect>
+                <ValidationMessage For="()=>ProdObj.CatId"></ValidationMessage>
             </div>
             
             <div>
@@ -87,6 +93,10 @@
     {
         Console.WriteLine("Product Saved");
         nav.NavigateTo("/products");
+    }
+    public void NotSave()
+    {
+        return;
     }
 
 }

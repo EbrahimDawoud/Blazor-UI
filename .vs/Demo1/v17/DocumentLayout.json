@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|d:\\iti\\course33(blazor)\\day2\\demo2\\demo1\\pages\\productsection\\productsw-s-component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|solutionrelative:demo1\\pages\\productsection\\productsw-s-component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|d:\\iti\\course33(blazor)\\day2\\demo2\\demo1\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|solutionrelative:demo1\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|d:\\iti\\course33(blazor)\\day2\\demo2\\demo1\\pages\\productsection\\productsw-s-component.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\demo1\\pages\\productsection\\productsw-s-component.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|solutionrelative:demo1\\pages\\productsection\\productsw-s-component.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|d:\\iti\\course33(blazor)\\day2\\demo2\\demo1\\pages\\productsection\\productdetailscomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|solutionrelative:demo1\\pages\\productsection\\productdetailscomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\demo1\\pages\\productsection\\producteditcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|solutionrelative:demo1\\pages\\productsection\\producteditcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|d:\\iti\\course33(blazor)\\day2\\demo2\\demo1\\pages\\productsection\\producteditcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF0012B3-8A27-4EF7-833B-2D69AB5A6078}|Demo1\\Demo1.csproj|solutionrelative:demo1\\pages\\productsection\\producteditcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\demo1\\models\\uniqueidvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:demo1\\models\\uniqueidvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,46 +26,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UniqueIdValidation.cs",
+              "DocumentMoniker": "D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\Demo1\\Models\\UniqueIdValidation.cs",
+              "RelativeDocumentMoniker": "Demo1\\Models\\UniqueIdValidation.cs",
+              "ToolTip": "D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\Demo1\\Models\\UniqueIdValidation.cs",
+              "RelativeToolTip": "Demo1\\Models\\UniqueIdValidation.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T11:23:39.559Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductsW-S-Component.razor",
-              "DocumentMoniker": "D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\Demo1\\Pages\\ProductSection\\ProductsW-S-Component.razor",
-              "RelativeDocumentMoniker": "Demo1\\Pages\\ProductSection\\ProductsW-S-Component.razor",
-              "ToolTip": "D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\Demo1\\Pages\\ProductSection\\ProductsW-S-Component.razor",
-              "RelativeToolTip": "Demo1\\Pages\\ProductSection\\ProductsW-S-Component.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T11:30:51.028Z",
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\Demo1\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Demo1\\Models\\Product.cs",
+              "ToolTip": "D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\Demo1\\Models\\Product.cs",
+              "RelativeToolTip": "Demo1\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T21:01:34.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductDetailsComponent.razor",
-              "DocumentMoniker": "D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\Demo1\\Pages\\ProductSection\\ProductDetailsComponent.razor",
-              "RelativeDocumentMoniker": "Demo1\\Pages\\ProductSection\\ProductDetailsComponent.razor",
-              "ToolTip": "D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\Demo1\\Pages\\ProductSection\\ProductDetailsComponent.razor",
-              "RelativeToolTip": "Demo1\\Pages\\ProductSection\\ProductDetailsComponent.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T11:20:24.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ProductEditComponent.razor",
               "DocumentMoniker": "D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\Demo1\\Pages\\ProductSection\\ProductEditComponent.razor",
               "RelativeDocumentMoniker": "Demo1\\Pages\\ProductSection\\ProductEditComponent.razor",
               "ToolTip": "D:\\ITI\\Course33(Blazor)\\Day2\\Demo2\\Demo1\\Pages\\ProductSection\\ProductEditComponent.razor",
               "RelativeToolTip": "Demo1\\Pages\\ProductSection\\ProductEditComponent.razor",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAEkAAAALAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T11:20:19.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T11:20:19.51Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "Demo1\\Pages\\ProductSection\\ProductsW-S-Component.razor.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T10:39:18.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T10:39:18.614Z"
             }
           ]
         },
