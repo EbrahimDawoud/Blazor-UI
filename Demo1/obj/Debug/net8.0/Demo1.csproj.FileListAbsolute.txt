@@ -2068,3 +2068,4 @@ D:\ITI\Course33(Blazor)\Day2\Demo2\Demo1\obj\Debug\net8.0\service-worker\service
 D:\ITI\Course33(Blazor)\Day2\Demo2\Demo1\obj\Debug\net8.0\service-worker-assets.js.build
 D:\ITI\Course33(Blazor)\Day2\Demo2\Demo1\obj\Debug\net8.0\Demo1.csproj.Up2Date
 D:\ITI\Course33(Blazor)\Day2\Demo2\Demo1\obj\Debug\net8.0\ref\Demo1.dll
+D:\ITI\Course33(Blazor)\Day2\Demo2\Demo1\obj\Debug\net8.0\Demo1.sourcelink.json
